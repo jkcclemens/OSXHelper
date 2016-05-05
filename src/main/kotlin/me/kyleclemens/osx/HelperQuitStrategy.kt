@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-package me.kyleclemens.ffxivraffler.util.os.osx
+package me.kyleclemens.osx
 
 enum class HelperQuitStrategy {
 
@@ -18,7 +18,7 @@ enum class HelperQuitStrategy {
             if (originalClass.name != "com.apple.eawt.${HelperQuitStrategy::class.java.simpleName.substring(6)}") {
                 throw IllegalArgumentException("Not the right object")
             }
-            return HelperQuitStrategy.valueOf(originalClass.simpleName)
+            return valueOf(originalClass.simpleName)
         }
     }
 

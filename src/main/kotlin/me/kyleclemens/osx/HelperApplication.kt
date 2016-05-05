@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-package me.kyleclemens.ffxivraffler.util.os.osx
+package me.kyleclemens.osx
 
-import me.kyleclemens.ffxivraffler.util.os.osx.handlers.HelperAboutHandler
-import me.kyleclemens.ffxivraffler.util.os.osx.handlers.HelperOpenFilesHandler
-import me.kyleclemens.ffxivraffler.util.os.osx.handlers.HelperOpenURIHandler
-import me.kyleclemens.ffxivraffler.util.os.osx.handlers.HelperPreferencesHandler
-import me.kyleclemens.ffxivraffler.util.os.osx.handlers.HelperPrintFilesHandler
-import me.kyleclemens.ffxivraffler.util.os.osx.handlers.HelperQuitHandler
-import me.kyleclemens.ffxivraffler.util.os.osx.listeners.HelperAppEventListener
+import me.kyleclemens.osx.handlers.HelperAboutHandler
+import me.kyleclemens.osx.handlers.HelperOpenFilesHandler
+import me.kyleclemens.osx.handlers.HelperOpenURIHandler
+import me.kyleclemens.osx.handlers.HelperPreferencesHandler
+import me.kyleclemens.osx.handlers.HelperPrintFilesHandler
+import me.kyleclemens.osx.handlers.HelperQuitHandler
+import me.kyleclemens.osx.listeners.HelperAppEventListener
 import java.awt.Image
 import java.awt.PopupMenu
 import java.awt.Window
