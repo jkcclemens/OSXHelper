@@ -63,3 +63,6 @@ class Example {
 OSXH has recreated the `com.apple.eawt` API in structure, and it uses Reflection to communicate between this facade and
 the real API. Listeners are registered in the real API using proxies that match all methods. Events are converted into
 facade events before being passed back to facade listeners.
+
+OS X Helper is written in Kotlin, which is 100% interoperable with Java. OSXH works in both Kotlin and Java, and should
+work naturally in both, as well.
