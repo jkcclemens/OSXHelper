@@ -5,4 +5,4 @@
  */
 package me.kyleclemens.osx.events
 
-abstract class HelperAppEvent(source: Any?) : EventObject(source)
+abstract class HelperAppEvent(source: Any?) : HelperEventObject(source)

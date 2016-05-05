@@ -5,14 +5,22 @@
  */
 package me.kyleclemens.osx.events
 
-open class EventObject(source: Any?) {
+open class HelperEventObject(source: Any?) {
 
     /**
      * The object on which the Event initially occurred.
      *
      * @return The object on which the Event initially occurred.
      */
-    @Transient protected val source: Any
+    @Transient protected var _source: Any
+
+    /**
+     * The object on which the Event initially occurred.
+     *
+     * @return The object on which the Event initially occurred.
+     */
+    val source: Any
+        get() = this._source
 
     /**
      * Constructs a prototypical Event.
@@ -24,7 +32,7 @@ open class EventObject(source: Any?) {
         if (source == null) {
             throw IllegalArgumentException("null source")
         }
-        this.source = source
+        this._source = source
     }
 
     /**
