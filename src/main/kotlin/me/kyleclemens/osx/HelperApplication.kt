@@ -136,11 +136,11 @@ class HelperApplication(application: Any? = null) {
     }
 
     fun setOpenFileHandler(handler: HelperOpenFilesHandler) {
-        this.callMethod("setOpenFileHandler", listOf("com.apple.eawt.OpenFileHandler"), this.proxyListenerOrHandler(handler))
+        this.callMethod("setOpenFileHandler", listOf("com.apple.eawt.OpenFilesHandler"), this.proxyListenerOrHandler(handler))
     }
 
     fun setPrintFileHandler(handler: HelperPrintFilesHandler) {
-        this.callMethod("setPrintFileHandler", listOf("com.apple.eawt.PrintFileHandler"), this.proxyListenerOrHandler(handler))
+        this.callMethod("setPrintFileHandler", listOf("com.apple.eawt.PrintFilesHandler"), this.proxyListenerOrHandler(handler))
     }
 
     fun setOpenURIHandler(handler: HelperOpenURIHandler) {
